@@ -1,0 +1,13 @@
+- Systems-level Exploration of Modern Tensorflow (Autograph!)
+- Systems-level Exploration of Jax
+- Design of the Google Dex Langauge for Array Programming
+- Virtualization and Hypervisors
+- React Under the Hood
+- Software Transactional Memory: Concept and Implementation
+- Data Valuation for Machine Learning
+- Implementation of Concurrency in Programming Languages
+
+6. Software Transactional Memory
+
+
+- Walkthrough of the Docker Whitepaper

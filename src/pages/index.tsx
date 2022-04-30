@@ -24,9 +24,15 @@ const Index = () => (
         </div>
       </p>
       <p>
-        I am currently a <b> Software Engineer Intern </b> at <b>Riot Games</b>.
-        I am with the <b>Live Operations Engineering Team</b>, where we build
-        systems to respond to and monitor crashes in live game services.
+        During Summer 2022, I will be at <b>Riot Games</b>{' '}
+        <img
+          src={'./assets/riot.png'}
+          alt="riot"
+          style={{ width: 25, height: 25, display: 'inline-block' }}
+        />{' '}
+        as a <b>Software Engineer Inten</b>. I am with the{' '}
+        <b>Live Operations Engineering Team</b>, where we build systems to
+        respond to and monitor crashes in live game services.
       </p>
       <p>
         Some courses I have taken at Columbia are:{' '}
@@ -63,9 +69,9 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>COMS 4701: Artificial Intelligence (Spring &lsquo; 22)</li>
+            <li>COMS 4701: Artificial Intelligence (Spring &lsquo;22)</li>
             <li>
-              CSEE 3827: Fundamentals of Computer Systems (Spring &lsquo; 22)
+              CSEE 3827: Fundamentals of Computer Systems (Spring &lsquo;22)
             </li>
           </ul>
         </small>

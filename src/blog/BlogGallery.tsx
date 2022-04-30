@@ -53,7 +53,7 @@ const TagGallery = (tag: string, posts: PostItems[]) => (
           className="rounded-md border-x-2 border-y-2 shadow mb-3 flex justify-between"
         >
           <div className="my-2 ml-2">
-            <Link href="/posts/[slug]" as={`/posts/${tag}/${post.slug}`}>
+            <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
               <a>
                 <h2>{post.title}</h2>
               </a>

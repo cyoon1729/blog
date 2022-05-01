@@ -24,15 +24,15 @@ const Index = () => (
         </div>
       </p>
       <p>
-        During Summer 2022, I will be at <b>Riot Games</b>{' '}
+        During Summer 2022, I will be at <b>Riot Games</b> as a{' '}
+        <b>Software Engineer Intern</b>
         <img
           src={'./assets/riot.png'}
           alt="riot"
           style={{ width: 25, height: 25, display: 'inline-block' }}
         />{' '}
-        as a <b>Software Engineer Inten</b>. I am with the{' '}
-        <b>Live Operations Engineering Team</b>, where we build systems to
-        respond to and monitor crashes in live game services.
+        . I am with the <b>Live Operations Engineering Team</b>, where we build
+        systems to respond to and monitor crashes in live game services.
       </p>
       <p>
         Some courses I have taken at Columbia are:{' '}

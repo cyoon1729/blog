@@ -25,7 +25,7 @@ const Index = () => (
       </p>
       <p>
         During Summer 2022, I will be at <b>Riot Games</b> as a{' '}
-        <b>Software Engineer Intern</b>
+        <b>Software Engineer Intern</b> &nbsp;
         <img
           src={'./assets/riot.png'}
           alt="riot"

@@ -44,7 +44,7 @@ function displayTags(tags: string[]) {
 
 const postTagList = (rawTags: string) => rawTags.toString().split(',');
 
-const TagGallery = (tag: string, posts: PostItems[]) => (
+const TagGallery = (posts: PostItems[]) => (
   <>
     <ul>
       {posts.map((post) => (
@@ -98,7 +98,7 @@ const BlogGallery = (props: IBlogGalleryProps) => {
           </button>
         ))}
       </div>
-      <div>{TagGallery(selectedTag, postsByTags.get(selectedTag)!)}</div>
+      <div>{TagGallery(postsByTags.get(selectedTag)!)}</div>
       <Pagination
         previous={props.pagination.previous}
         next={props.pagination.next}

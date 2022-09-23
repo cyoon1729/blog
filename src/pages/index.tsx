@@ -11,17 +11,23 @@ const Index = () => (
         <h1>Chris Yoon</h1>
       </div>
       <p>
-        I am a 3rd year undergrad (graduating in 2024 Spring!) at Columbia
+        I am a 3rd year undergrad (graduating in May 2024!) at Columbia
         University studying Computer Science. I am especially passionate
         about... <br />
         <br />
         <div className="text-center">
           <b>
             {' '}
-            Distributed Systems &nbsp; && &nbsp; ML Systems &nbsp; && &nbsp;
-            Operating Systems
+            Operating Systems &nbsp; && &nbsp; Compilers &nbsp; && &nbsp;
+            Programming Languages
           </b>
         </div>
+      </p>
+      <p>
+        In Summer 2023, I will be joining <b>Virtu Financial</b> (a high
+        frequency trading firm) as a <b>Software Engineer Intern</b>. Following
+        that, during Fall 2023, I will be at <b>Palantir Technologies</b> as a
+        &nbsp; <b>Software Engineer Intern</b>.
       </p>
       <p>
         Previously, I was a <b>Software Engineer Intern </b> at{' '}
@@ -31,15 +37,13 @@ const Index = () => (
           alt="riot"
           style={{ width: 25, height: 25, display: 'inline-block' }}
         />{' '}
-        . I was with the{' '}
-        <b>Live Operations Engineering - Incident Management Team</b>, which
-        builds tools and infrastructure that makes detecting and responding to
-        service incidents for our game services (e.g. League of Legends and
-        Valorant) more efficient.
+        . I was with the <b>Incident Management Team</b>, which builds tools and
+        infrastructure that makes detecting and responding to service incidents
+        for their game services (like League of Legends and Valorant) more
+        efficient.
       </p>
       <p>
-        My coursework at Columbia that are representative of my strengths and
-        interests are:{' '}
+        Some interesting courses I have taken at Columbia are:
         <small>
           <ul
             style={{
@@ -48,20 +52,9 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
+            <li>COMS 6998: Graduate Research Seminar on Operating Systems</li>
             <li>
-              {' '}
-              COMS 6998: Graduate Research Seminar on Operating Systems (taking
-              in Fall 2022)
-            </li>
-            <li>
-              {' '}
-              COMS 6863: Graduate Seminar on Software & Hardware Verification
-              (taking in Fall 2022)
-            </li>
-            <li>COMS 4113: Distributed Systems (taking in Fall 2022) </li>
-            <li>
-              COMS 4115: Progamming Languages and Translators; Compilers (taking
-              in Fall 2022){' '}
+              COMS 4115: Programming Languages and Translators (Compilers)
             </li>
             <li>COMS 4118: Operating Systems</li>
             <li>COMS 4995: Parallel Functional Programming</li>

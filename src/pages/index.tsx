@@ -59,7 +59,7 @@ const Index = () => (
         <b>Riot Games, Software Engineer Intern (2022 Summer)</b>
         <br />
         Riot Games is an online game company behind games like League of Legends
-        and Valorant. I was with the
+        and Valorant. I was with the &nbsp;
         <em>Live Operations Enginnering - Incident Management Team</em>,
         building tools to improve service observability and infrastructure for
         service incident response.

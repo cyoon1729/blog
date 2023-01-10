@@ -11,39 +11,62 @@ const Index = () => (
         <h1>Chris Yoon</h1>
       </div>
       <p>
-        I am a 3rd year undergrad (graduating in May 2024!) at Columbia
-        University studying Computer Science. I am especially passionate
-        about... <br />
+        I am a 3rd year undergrad (graduating a bit early, in Dec 2023!) at
+        Columbia University studying Computer Science. I am especially
+        passionate about...
+        <br />
         <br />
         <div className="text-center">
           <b>
             {' '}
-            Operating Systems &nbsp; && &nbsp; Compilers &nbsp; && &nbsp;
-            Programming Languages
+            Operating Systems &nbsp; && &nbsp; Compilers &nbsp; && &nbsp; ML
+            Systems/Ops/Infrastructure
           </b>
         </div>
+        <br />
+        At Columbia, I am conducting research on building secure
+        containerization mechanisms on untrusted software systems, advised by
+        &nbsp;
+        <a href="https://www.cs.columbia.edu/~nieh/">Professor Jason Nieh</a>.
+        <br />
+        <br /> I am also part of &nbsp;
+        <a href="http://www.cs.columbia.edu/~sedwards/">
+          Professor Stephen Edwards
+        </a>
+        &apos;&nbsp;
+        <em>sslang</em> group, implementing compiler features for &nbsp;
+        <a href="http://https://github.com/ssm-lang">
+          <em>sslang</em>
+        </a>
+        , a language allowing precise timing and concurrency control, targetting
+        real-time operating systems.
       </p>
       <p>
-        In Summer 2023, I will be joining <b>Virtu Financial</b> (a high
-        frequency trading firm) as a <b>Software Engineer Intern</b>. Following
-        that, during Fall 2023, I will be at <b>Palantir Technologies</b> as a
-        &nbsp; <b>Software Engineer Intern</b>.
+        <h2> Experience </h2>
+        <img src="./assets/timeline.svg" />
+        <br />
+        <b>Virtu Financial, Software Engineer Intern (2023 Summer)</b>
+        <br />
+        Virtu Financial is a High Frequency Trading and Electronic Market Making
+        Firm. I will be joining their NYC office to work on...
+        <br />
+        <br />
+        <b>Palantir Technologies, Software Engineer Intern (2023 Fall)</b>
+        <br />
+        Joining their NYC office during 2023 Fall to work on...
+        <br />
+        <br />
+        <b>Riot Games, Software Engineer Intern (2022 Summer)</b>
+        <br />
+        Riot Games is an online game company behind games like League of Legends
+        and Valorant. I was with the
+        <em>Live Operations Enginnering - Incident Management Team</em>,
+        building tools to improve service observability and infrastructure for
+        service incident response.
       </p>
       <p>
-        Previously, I was a <b>Software Engineer Intern </b> at{' '}
-        <b>Riot Games</b> &nbsp;
-        <img
-          src={'./assets/riot.png'}
-          alt="riot"
-          style={{ width: 25, height: 25, display: 'inline-block' }}
-        />{' '}
-        . I was with the <b>Incident Management Team</b>, which builds tools and
-        infrastructure that makes detecting and responding to service incidents
-        for their game services (like League of Legends and Valorant) more
-        efficient.
-      </p>
-      <p>
-        Some interesting courses I have taken at Columbia are:
+        <h2> School </h2> I had the chance to take some really interesting
+        courses at Columbia:
         <small>
           <ul
             style={{
@@ -52,11 +75,13 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>COMS 6998: Graduate Research Seminar on Operating Systems</li>
+            <li>COMS 6998: (Graduate) Privacy Preserving Systems</li>
+            <li>COMS 6118: (Graduate) Research Seminar on Operating Systems</li>
             <li>
               COMS 4115: Programming Languages and Translators (Compilers)
             </li>
             <li>COMS 4118: Operating Systems</li>
+            <li>COMS 4119: Computer Networks</li>
             <li>COMS 4995: Parallel Functional Programming</li>
             <li>COMS 4111: Database Systems</li>
             <li>
@@ -66,7 +91,7 @@ const Index = () => (
             <li>MATH 4061: Real Analysis I</li>
           </ul>
         </small>
-        I was also a Teaching Assistant at Columbia for
+        I have also had the opportunity to be a Teaching Assistant for:
         <small>
           <ul
             style={{
@@ -77,11 +102,12 @@ const Index = () => (
           >
             <li>COMS 4995: Parallel Functional Programming (Fall &lsquo;22)</li>
             <li>
-              COMS 4701: Artificial Intelligence (Spring, Summer &lsquo;22)
+              COMS 4701: Artificial Intelligence (Spring &lsquo;22, Summer
+              &lsquo;22, Spring &lsquo;23)
             </li>
             <li>
-              CSEE 3827: Fundamentals of Computer Systems (Spring, Fall
-              &lsquo;22)
+              CSEE 3827: Fundamentals of Computer Systems (Spring &lsquo;22,
+              Fall &lsquo;22, Spring &lsquo;23)
             </li>
           </ul>
         </small>

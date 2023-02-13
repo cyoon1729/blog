@@ -11,16 +11,15 @@ const Index = () => (
         <h1>Chris Yoon</h1>
       </div>
       <p>
-        I am a 3rd year undergrad (graduating a bit early, in Dec 2023!) at
-        Columbia University studying Computer Science. I am especially
-        passionate about...
+        I am a third year undergrad at Columbia University studying Computer
+        Science. I am especially passionate about...
         <br />
         <br />
         <div className="text-center">
           <b>
             {' '}
-            Operating Systems &nbsp; && &nbsp; Compilers &nbsp; && &nbsp; ML
-            Systems/Ops/Infrastructure
+            Operating Systems &nbsp; && &nbsp; Languages and Compilers &nbsp; &&
+            &nbsp; ML Systems/Ops/Infrastructure
           </b>
         </div>
         <br />
@@ -28,6 +27,8 @@ const Index = () => (
         containerization mechanisms on untrusted software systems, advised by
         &nbsp;
         <a href="https://www.cs.columbia.edu/~nieh/">Professor Jason Nieh</a>.
+        My work mostly involves linux kernel programming and hypervisor
+        engineering.
         <br />
         <br /> I am also part of &nbsp;
         <a href="http://www.cs.columbia.edu/~sedwards/">
@@ -47,8 +48,8 @@ const Index = () => (
         <br />
         <b>Virtu Financial, Software Engineer Intern (2023 Summer)</b>
         <br />
-        Virtu Financial is a High Frequency Trading and Electronic Market Making
-        Firm. I will be joining their NYC office to work on...
+        Virtu Financial is a High Frequency Trading firm. I will be joining
+        their NYC office to work on...
         <br />
         <br />
         <b>Palantir Technologies, Software Engineer Intern (2023 Fall)</b>
@@ -81,7 +82,6 @@ const Index = () => (
               COMS 4115: Programming Languages and Translators (Compilers)
             </li>
             <li>COMS 4118: Operating Systems</li>
-            <li>COMS 4119: Computer Networks</li>
             <li>COMS 4995: Parallel Functional Programming</li>
             <li>COMS 4111: Database Systems</li>
             <li>

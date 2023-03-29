@@ -16,11 +16,11 @@ const Index = () => (
         <br />
         <br />
         <div className="text-center">
-          <b> Languages and Compilers &nbsp; && ML Systems/Infrastructure</b>
+          <b> Compilers &nbsp; && ML Systems && Software Infrastructure</b>
         </div>
         <br />
         At Columbia, I am conducting research on secure containerization
-        mechanisms on untrusted software systems, advised by
+        mechanisms on untrusted software systems, advised by &nbsp;
         <a href="https://www.cs.columbia.edu/~nieh/">Professor Jason Nieh</a>.
         <br />
         <br /> I am also part of &nbsp;

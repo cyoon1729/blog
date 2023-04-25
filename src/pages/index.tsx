@@ -11,29 +11,17 @@ const Index = () => (
         <h1>Chris Yoon</h1>
       </div>
       <p>
-        I am a third year undergrad at Columbia University studying Computer
-        Science. I am especially passionate about...
-        <br />
-        <br />
-        <div className="text-center">
-          <b> Compilers &nbsp; && ML Systems && Software Infrastructure</b>
-        </div>
-        <br />
-        At Columbia, I am conducting research on secure containerization
-        mechanisms on untrusted software systems, advised by &nbsp;
-        <a href="https://www.cs.columbia.edu/~nieh/">Professor Jason Nieh</a>.
-        <br />
-        <br /> I am also part of &nbsp;
-        <a href="http://www.cs.columbia.edu/~sedwards/">
-          Professor Stephen Edwards
-        </a>
-        &apos;&nbsp;
-        <em>sslang</em> group, implementing compiler features for &nbsp;
-        <a href="http://https://github.com/ssm-lang">
-          <em>sslang</em>
-        </a>
-        , a language allowing precise timing and concurrency control, targetting
-        real-time operating systems.
+        I am an undergrad at Columbia University studying Computer
+        Science (graduating in 2024!).
+      </p>
+      <p>
+	I care deeply about building safe and performant software systems.
+	Specifically, I enjoy studying <em>compilers</em>, <em>languages</em>, and
+	&nbsp;<em>systems-for-ML</em>.
+      </p>
+      <p>
+	Recently, I've been thinking about <em>type systems</em>, <em>session types</em>,
+	and <em>Rust</em>!
       </p>
       <p>
         <h2> Experience </h2>
@@ -69,8 +57,9 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>COMS 6998: (Graduate) Privacy Preserving Systems</li>
-            <li>COMS 6118: (Graduate) Research Seminar on Operating Systems</li>
+            <li>COMS 6998: Graduate Seminar on Type Systems and Programming Languages</li>
+            <li>COMS 6998: Graduate Seminar on Privacy Preserving Systems</li>
+            <li>COMS 6118: Graduate Seminar on Operating Systems</li>
             <li>
               COMS 4115: Programming Languages and Translators (Compilers)
             </li>
@@ -93,7 +82,7 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>COMS 4995: Parallel Functional Programming (Fall &lsquo;22)</li>
+            <li>COMS 4995: Parallel Functional Programming (with Haskell) (Fall &lsquo;22)</li>
             <li>
               COMS 4701: Artificial Intelligence (Spring &lsquo;22, Summer
               &lsquo;22, Spring &lsquo;23)

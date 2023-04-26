@@ -11,17 +11,20 @@ const Index = () => (
         <h1>Chris Yoon</h1>
       </div>
       <p>
-        I am an undergrad at Columbia University studying Computer
-        Science (graduating in 2024!).
+        I am an undergrad at Columbia University studying Computer Science
+        (graduating in 2024!).
       </p>
       <p>
-	I care deeply about building safe and performant software systems.
-	Specifically, I enjoy studying <em>compilers</em>, <em>languages</em>, and
-	&nbsp;<em>systems-for-ML</em>.
+        I care deeply about building safe and performant software systems.
+        Towards this, I particularly enjoy studying compilers and programming
+        languages. I am also interested in ML systems and infrastructure.
       </p>
       <p>
-	Recently, I've been thinking about <em>type systems</em>, <em>session types</em>,
-	and <em>Rust</em>!
+        Recently, I&lsquo;ve been thinking about <em>type systems</em>,
+        <em> session types</em>, and <em>Rust</em>. Some time ago, I&lsquo;ve
+        worked on Operating Systems research (on containerization); even before
+        that, I did some work in Machine Learning (geometric deep learning,
+        reinforcement learning).
       </p>
       <p>
         <h2> Experience </h2>
@@ -57,7 +60,7 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>COMS 6998: Graduate Seminar on Type Systems and Programming Languages</li>
+            <li>COMS 6998: Graduate Seminar on Programming Languages Theory</li>
             <li>COMS 6998: Graduate Seminar on Privacy Preserving Systems</li>
             <li>COMS 6118: Graduate Seminar on Operating Systems</li>
             <li>
@@ -82,7 +85,10 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>COMS 4995: Parallel Functional Programming (with Haskell) (Fall &lsquo;22)</li>
+            <li>
+              COMS 4995: Parallel Functional Programming (with Haskell) (Fall
+              &lsquo;22)
+            </li>
             <li>
               COMS 4701: Artificial Intelligence (Spring &lsquo;22, Summer
               &lsquo;22, Spring &lsquo;23)

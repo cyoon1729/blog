@@ -31,6 +31,17 @@ const Main = (props: IMainProps) => {
                 </Link>
               </li>
               <li className="mr-6">
+                <Link href="/projects/">
+                  <a
+                    style={{
+                      color: router.pathname === '/projects' ? '#78b3e0' : '',
+                    }}
+                  >
+                    Projects
+                  </a>
+                </Link>
+              </li>
+              <li className="mr-6">
                 <Link href="/blog/">
                   <a
                     style={{

@@ -15,16 +15,20 @@ const Index = () => (
         (graduating in 2024!).
       </p>
       <p>
-        I care deeply about building safe and performant software systems.
+        I care deeply about building robust and performant software systems.
         Towards this, I particularly enjoy studying compilers and programming
-        languages. I am also interested in ML systems and infrastructure.
+        languages. I am also interested in ML systems and infrastructure,
+        particularly on the scalability of (differentially) private systems.
       </p>
       <p>
-        Recently, I&lsquo;ve been thinking about <em>type systems</em>,
-        <em> session types</em>, and <em>Rust</em>. Some time ago, I&lsquo;ve
-        worked on Operating Systems research (on containerization); even before
-        that, I did some work in Machine Learning (geometric deep learning,
-        reinforcement learning).
+        Currently, I&lsquo;m thinking about <em>Rust</em>, <em>Zig</em>, and
+        <em> session types</em>. Some time ago, I&lsquo;ve worked on Operating
+        Systems research (on containerization); even before that, I did some
+        work in Machine Learning (geometric deep learning, reinforcement
+        learning).
+      </p>
+      <p>
+        See <a href="projects">here</a> to read about some of my projects!
       </p>
       <p>
         <h2> Experience </h2>
@@ -43,8 +47,8 @@ const Index = () => (
         <br />
         <b>Riot Games, Software Engineer Intern (2022 Summer)</b>
         <br />
-        Riot Games is an online game company behind games like League of Legends
-        and Valorant. I was with the &nbsp;
+        Riot Games is an online game company behind <b>League of Legends </b>
+        and <b>Valorant</b>. I was with the &nbsp;
         <em>Live Operations Enginnering - Incident Management Team</em>,
         building tools to improve service observability and infrastructure for
         service incident response.

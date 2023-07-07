@@ -36,13 +36,14 @@ const Index = () => (
         <br />
         <b>Virtu Financial, Software Engineer Intern (2023 Summer)</b>
         <br />
-        Virtu Financial is a High Frequency Trading firm. I will be joining
-        their NYC office to work on...
+        Virtu Financial is a High Frequency Trading firm. I am with the
+        pre/post-trade infrastructure team, and did some work on low-level
+        networking and DB access control mechanisms.
         <br />
         <br />
         <b>Palantir Technologies, Software Engineer Intern (2023 Fall)</b>
         <br />
-        Joining their NYC office during 2023 Fall to work on...
+        I will be joining them in their NYC office during 2023 Fall.
         <br />
         <br />
         <b>Riot Games, Software Engineer Intern (2022 Summer)</b>

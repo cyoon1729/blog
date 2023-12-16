@@ -12,20 +12,20 @@ const Index = () => (
       </div>
       <p>
         I am an undergrad at Columbia University studying Computer Science
-        (graduating in 2024!).
+        (graduating in 2024!). I will be joining Palantir Technologies as a
+        Software Engineer following my graduation.
       </p>
       <p>
         I care deeply about building robust and performant software systems.
-        Towards this, I particularly enjoy studying compilers and programming
-        languages. I am also interested in ML systems and infrastructure,
-        particularly on the scalability of (differentially) private systems.
+        Towards this, I particularly enjoy studying operating systems,
+        compilers, and programming language theory.
       </p>
       <p>
-        Currently, I&lsquo;m thinking about <em>Rust</em>, <em>Zig</em>, and
-        <em> session types</em>. Some time ago, I&lsquo;ve worked on Operating
-        Systems research (on containerization); even before that, I did some
-        work in Machine Learning (geometric deep learning, reinforcement
-        learning).
+        My recent academic endeavors have been operating systems (eBPF,
+        hypervisor engineering, containerization), and programming languages
+        (mainly type systems and compiler implementations). In the distant past
+        I did some work in machine learning (geometric deep learning,
+        reinforcement learning, and distributed training).
       </p>
       <p>
         See <a href="projects">here</a> to read about some of my projects!
@@ -34,16 +34,20 @@ const Index = () => (
         <h2> Experience </h2>
         <img src="./assets/timeline.svg" />
         <br />
+        <b>Palantir Technologies, Software Engineer Intern (2023 Fall)</b>
+        <br />
+        I was primarily with the Gotham Data Modeling team, but also contributed
+        to Foundry services as part of their unification/interoperability
+        effort. I did backend engineering for their ontology services, which
+        control how data is ingested, represented, and distributed to downstream
+        functionalities.
+        <br />
+        <br />
         <b>Virtu Financial, Software Engineer Intern (2023 Summer)</b>
         <br />
         Virtu Financial is a High Frequency Trading firm. I am with the
         pre/post-trade infrastructure team, and did some work on low-level
         networking and DB access control mechanisms.
-        <br />
-        <br />
-        <b>Palantir Technologies, Software Engineer Intern (2023 Fall)</b>
-        <br />
-        I will be joining them in their NYC office during 2023 Fall.
         <br />
         <br />
         <b>Riot Games, Software Engineer Intern (2022 Summer)</b>
@@ -65,6 +69,7 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
+            <li>EECS 6891: Graduate Seminar on Extensible Operating Systems</li>
             <li>COMS 6998: Graduate Seminar on Programming Languages Theory</li>
             <li>COMS 6998: Graduate Seminar on Privacy Preserving Systems</li>
             <li>COMS 6118: Graduate Seminar on Operating Systems</li>
@@ -72,7 +77,7 @@ const Index = () => (
               COMS 4115: Programming Languages and Translators (Compilers)
             </li>
             <li>COMS 4118: Operating Systems</li>
-            <li>COMS 4995: Parallel Functional Programming</li>
+            <li>COMS 4995: Parallel Functional Programming (with Haskell)</li>
             <li>COMS 4111: Database Systems</li>
             <li>
               MATH 4041 & 4042: Modern Algebra I&II (Abstract Algebra, Group

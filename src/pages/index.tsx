@@ -40,23 +40,22 @@ const Index = () => (
         to Foundry services as part of their unification/interoperability
         effort. I did backend engineering for their ontology services, which
         control how data is ingested, represented, and distributed to downstream
-        functionalities.
+        services.
         <br />
         <br />
         <b>Virtu Financial, Software Engineer Intern (2023 Summer)</b>
         <br />
-        Virtu Financial is a High Frequency Trading firm. I am with the
+        Virtu Financial is a High Frequency Trading firm. I was with the
         pre/post-trade infrastructure team, and did some work on low-level
-        networking and DB access control mechanisms.
+        networking with Java and DB access control mechanisms.
         <br />
         <br />
         <b>Riot Games, Software Engineer Intern (2022 Summer)</b>
         <br />
-        Riot Games is an online game company behind <b>League of Legends </b>
-        and <b>Valorant</b>. I was with the &nbsp;
-        <em>Live Operations Enginnering - Incident Management Team</em>,
-        building tools to improve service observability and infrastructure for
-        service incident response.
+        Riot Games is an online game company behind <em>League of Legends </em>
+        and <em>Valorant</em>. I was with the Live Operations Engineering Team,
+        building tools to improve observability and infrastructure for service
+        incident response.
       </p>
       <p>
         <h2> School </h2> I had the chance to take some really interesting
@@ -69,7 +68,10 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>EECS 6891: Graduate Seminar on Extensible Operating Systems</li>
+            <li>
+              EECS 6891: Graduate Seminar on Extensible Operating Systems
+              (Exokernels and eBPF)
+            </li>
             <li>COMS 6998: Graduate Seminar on Programming Languages Theory</li>
             <li>COMS 6998: Graduate Seminar on Privacy Preserving Systems</li>
             <li>COMS 6118: Graduate Seminar on Operating Systems</li>
@@ -78,6 +80,7 @@ const Index = () => (
             </li>
             <li>COMS 4118: Operating Systems</li>
             <li>COMS 4995: Parallel Functional Programming (with Haskell)</li>
+            <li>COMS 4232: Graduate Algorithms</li>
             <li>COMS 4111: Database Systems</li>
             <li>
               MATH 4041 & 4042: Modern Algebra I&II (Abstract Algebra, Group

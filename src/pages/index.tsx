@@ -17,15 +17,17 @@ const Index = () => (
       </p>
       <p>
         I care deeply about building robust and performant software systems.
-        Towards this, I particularly enjoy studying operating systems,
-        compilers, and programming language theory.
+        Towards this, I enjoy studying compilers, programming language theory,
+        and operating systems, roughly in that order. Recently, I have been
+        thinking about compiler optimizations and formal verification!
       </p>
       <p>
-        My recent academic endeavors have been operating systems (eBPF,
-        hypervisor engineering, containerization), and programming languages
-        (mainly type systems and compiler implementations). In the distant past
-        I did some work in machine learning (geometric deep learning,
-        reinforcement learning, and distributed training).
+        My recent academic endeavors have been in programming languages (type
+        systems, session types, and equality saturation); compilers (LLVM and
+        MLIR hacking), and in operating systems (hypervisors and secure
+        containerization). In the distant past I did some work in machine
+        learning (geometric deep learning, reinforcement learning, and
+        distributed training).
       </p>
       <p>
         See <a href="projects">here</a> to read about some of my projects!
@@ -68,19 +70,16 @@ const Index = () => (
               marginLeft: '3.5em',
             }}
           >
-            <li>
-              EECS 6891: Graduate Seminar on Extensible Operating Systems
-              (Exokernels and eBPF)
-            </li>
-            <li>COMS 6998: Graduate Seminar on Programming Languages Theory</li>
+            <li>COMS 6998: Graduate Seminar on Programming Language Theory</li>
             <li>COMS 6998: Graduate Seminar on Privacy Preserving Systems</li>
             <li>COMS 6118: Graduate Seminar on Operating Systems</li>
             <li>
               COMS 4115: Programming Languages and Translators (Compilers)
             </li>
             <li>COMS 4118: Operating Systems</li>
+            <li>CSEE 4824: Computer Architecture</li>
+            <li>COMS 4119: Computer Networks</li>
             <li>COMS 4995: Parallel Functional Programming (with Haskell)</li>
-            <li>COMS 4232: Graduate Algorithms</li>
             <li>COMS 4111: Database Systems</li>
             <li>
               MATH 4041 & 4042: Modern Algebra I&II (Abstract Algebra, Group
@@ -99,6 +98,10 @@ const Index = () => (
             }}
           >
             <li>
+              COMS 4115: Programming Languages and Translators (Compilers)
+              (Spring &lsquo;24 Head TA)
+            </li>
+            <li>
               COMS 4995: Parallel Functional Programming (with Haskell) (Fall
               &lsquo;22)
             </li>
@@ -108,7 +111,7 @@ const Index = () => (
             </li>
             <li>
               CSEE 3827: Fundamentals of Computer Systems (Spring &lsquo;22,
-              Fall &lsquo;22, Spring &lsquo;23)
+              Fall &lsquo;22, Spring &lsquo;23 Head TA)
             </li>
           </ul>
         </small>

@@ -107,11 +107,11 @@ const Index = () => (
             </li>
             <li>
               COMS 4701: Artificial Intelligence (Spring &lsquo;22, Summer
-              &lsquo;22, Spring &lsquo;23)
+              &lsquo;22, Spring &lsquo;23 Head TA)
             </li>
             <li>
               CSEE 3827: Fundamentals of Computer Systems (Spring &lsquo;22,
-              Fall &lsquo;22, Spring &lsquo;23 Head TA)
+              Fall &lsquo;22, Spring &lsquo;23)
             </li>
           </ul>
         </small>

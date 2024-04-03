@@ -17,9 +17,9 @@ const Index = () => (
       </p>
       <p>
         I care deeply about building robust and performant software systems.
-        Towards this, I enjoy studying compilers, programming language theory,
-        and operating systems, roughly in that order. Recently, I have been
-        thinking about compiler optimizations and formal verification!
+        Towards this, I enjoy studying programming language theory, compilers,
+        and operating systems, roughly in that order. Recently, I've been 
+        exploring formal verification and the Coq proof assistant.
       </p>
       <p>
         My recent academic endeavors have been in programming languages (type

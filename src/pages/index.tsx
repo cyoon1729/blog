@@ -77,10 +77,8 @@ const Index = () => (
               COMS 4115: Programming Languages and Translators (Compilers)
             </li>
             <li>COMS 4118: Operating Systems</li>
-            <li>CSEE 4824: Computer Architecture</li>
             <li>COMS 4119: Computer Networks</li>
             <li>COMS 4995: Parallel Functional Programming (with Haskell)</li>
-            <li>COMS 4111: Database Systems</li>
             <li>
               MATH 4041 & 4042: Modern Algebra I&II (Abstract Algebra, Group
               Theory, Galois Theory){' '}

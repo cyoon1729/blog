@@ -1,0 +1,46 @@
+cabal-version:      3.0
+name:               blog
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             cyoon1729
+maintainer:         cjy2129@gmail.com
+-- copyright:
+category:           Web
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  MyLib
+    other-modules: HtmlHead, Style, Navbar, Markdown, Page, Server
+    -- other-extensions:
+    build-depends:
+        base ^>=4.17.2.1
+        , text
+        , warp
+        , cmark
+        , wai
+        , scotty
+        , lucid2
+        , raw-strings-qq
+    hs-source-dirs:   src, src/blog
+    default-language: Haskell2010
+
+executable blog
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:
+        base ^>=4.17.2.1,
+        blog
+
+    hs-source-dirs:   app
+    default-language: Haskell2010

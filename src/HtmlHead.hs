@@ -6,9 +6,6 @@
 module HtmlHead (htmlHead) where
 
 import Lucid
-import Lucid.Base
-import Lucid.Html5
-import Text.RawString.QQ
 
 import Style (style)
 

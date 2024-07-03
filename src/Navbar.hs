@@ -4,7 +4,6 @@
 
 module Navbar (navbar) where
 
-import Data.Text (Text)
 import Lucid
 import Lucid.Base
 import Lucid.Html5

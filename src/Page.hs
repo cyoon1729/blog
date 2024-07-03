@@ -5,8 +5,6 @@
 module Page (generatePageMd) where
 
 import Lucid
-import Lucid.Base
-import Lucid.Html5
 
 import HtmlHead (htmlHead)
 import Markdown (mdToHtml)

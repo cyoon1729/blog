@@ -65,13 +65,17 @@ style =
       font-size: 1.1em;
     }
 
+    h5 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
     main {
       margin-top: 2rem;
     }
 
     .navbar {
       margin: 0 auto;
-      display: flex;
     }
 
     .tag-container {
@@ -103,6 +107,7 @@ style =
 
     .navbar-li {
       margin-right: 15px;
+      margin-left: 0px;
     }
     
     ul {
@@ -116,7 +121,6 @@ style =
       float: left;
     }
 
-
     a {
     }
 
@@ -127,5 +131,9 @@ style =
 
     p {
       font-size: 1.4rem;
+    }
+
+    footer {
+      min-height: 50px;
     }
   |]

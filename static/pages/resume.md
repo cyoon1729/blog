@@ -1,10 +1,10 @@
 ## Resume
 [Here](chris_yoon.pdf) is a pdf file of my resume,
-and below is a more free-form resume, which is a bit more concise:
+and below is a more free-form resume:
 
 ##### Skills
 - Areas: Distributed Systems, Operating Systems, Compilers, Backend Dev
-- Programming Languages: C, C++, Java, Python, OCaml, Haskell, Rust, RISC Assembly
+- Programming Languages: C, C++, Java, Python, OCaml, Haskell, Rust
 - Technologies: LLVM, MLIR, Hypervisors, Containerization, PyTorch, Tensorflow, SQL
 
 &nbsp;
@@ -21,8 +21,8 @@ Broadly put, I built services for the interoperability and the synchronization/d
 Related technologies: Java, API Engineering, Distributed Systems
 
 #### Software Engineer Intern, Virtu Financial (06.2023 - 08.2023) - NY, NY
-I implemented mTLS for async TCP connections with low-level Java interfaces for core high-frequency trading infrastructure running on proprietary JVM.
-I also implemented a proprietary authentication & authorization mechanism into company’s post-trade data services (Kerberos, JWTs etc).
+I implemented mTLS for async TCP connections with low-level Java interfaces for their core high-frequency trading infrastructure.
+I also implemented a proprietary authentication & authorization mechanism into the company’s post-trade data services (Kerberos, JWTs etc).
 
 Related technologies: Java standard libraries (concurrency, NIO, security, networking), Java Spring
 
@@ -32,6 +32,8 @@ and a CI/CD pipeline that triggers the config manager for deploying configs to m
 and running config rollbacks at failures.
 
 Related Technologies: Python, Docker, Jenkins
+
+&nbsp;
 
 ##### Education 
 #### Columbia College, Columbia University (09.2020 - 05.2024) - NY, NY

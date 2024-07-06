@@ -1,12 +1,12 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Server (serve) where
+module Blog.Server (serve) where
 
 import Control.Monad.IO.Class (liftIO)
 import Data.Text.Lazy (pack)
 import qualified Web.Scotty
 
-import Page (generatePageMd)
+import Blog.Page (generatePageMd)
 
 homeAction :: Web.Scotty.ActionM ()
 homeAction = do

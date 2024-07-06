@@ -18,8 +18,16 @@ common warnings
 
 library
     import:           warnings
-    exposed-modules:  MyLib
-    other-modules: HtmlHead, Style, Navbar, Markdown, Page, Server, Generate
+    exposed-modules:
+      MyLib
+    other-modules:
+      Blog.Generate
+      Blog.Server
+      Blog.Style
+      Blog.Page
+      Blog.Markdown
+      Blog.Navbar
+      Blog.HtmlHead
     -- other-extensions:
     build-depends:
         base ^>=4.17.2.1
@@ -31,7 +39,7 @@ library
         , scotty
         , lucid2
         , raw-strings-qq
-    hs-source-dirs:   src, src/blog
+    hs-source-dirs:   src
     default-language: Haskell2010
 
 executable blog

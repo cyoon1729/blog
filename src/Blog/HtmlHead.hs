@@ -3,11 +3,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes #-}
 
-module HtmlHead (htmlHead) where
+module Blog.HtmlHead (htmlHead) where
 
 import Lucid
 
-import Style (style)
+import Blog.Style (style)
 
 meta :: Html ()
 meta = do

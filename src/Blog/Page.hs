@@ -2,13 +2,13 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Page (generatePageMd, generatePageStr) where
+module Blog.Page (generatePageMd, generatePageStr) where
 
 import Lucid
 
-import HtmlHead (htmlHead)
-import Markdown (mdToHtml)
-import Navbar (navbar)
+import Blog.HtmlHead (htmlHead)
+import Blog.Markdown (mdToHtml)
+import Blog.Navbar (navbar)
 
 pageTemplate :: Html () -> Html ()
 pageTemplate stuff = htmlHead >> (body_ (navbar >> stuff))

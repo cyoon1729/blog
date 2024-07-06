@@ -3,7 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes #-}
 
-module Style (style) where
+module Blog.Style (style) where
 
 import Lucid
 import Lucid.Base

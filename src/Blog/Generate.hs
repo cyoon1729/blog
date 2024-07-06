@@ -1,9 +1,8 @@
-module Generate (generateAll) where
+module Blog.Generate (generateAll) where
 
-import qualified System.IO (readFile, writeFile)
 import qualified System.Directory as Dir
 
-import Page (generatePageStr)
+import Blog.Page (generatePageStr)
 
 createBase :: IO ()
 createBase = Dir.createDirectory "./out"
@@ -22,7 +21,6 @@ createResumePage = do
   page <- generatePageStr "static/pages/resume.md"
   writeFile "out/resume/index.html" page
 
-
 createBlogHome :: IO ()
 createBlogHome = do
   page <- generatePageStr "static/pages/blog.md"
@@ -36,7 +34,7 @@ createProjectsHome = do
 generateAll :: IO ()
 generateAll = do
   createBase
-  createSubDirectories
+  _ <- createSubDirectories
   createHome
   createResumePage
   createBlogHome

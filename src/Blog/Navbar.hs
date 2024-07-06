@@ -2,7 +2,7 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Navbar (navbar) where
+module Blog.Navbar (navbar) where
 
 import Lucid
 import Lucid.Base

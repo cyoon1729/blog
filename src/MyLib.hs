@@ -1,4 +1,4 @@
 module MyLib (serve, generateAll) where
 
-import Server (serve)
-import Generate (generateAll)
+import Blog.Server (serve)
+import Blog.Generate (generateAll)

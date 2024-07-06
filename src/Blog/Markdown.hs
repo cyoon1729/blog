@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Markdown (mdToHtml) where
+module Blog.Markdown (mdToHtml) where
 
 import Lucid
 import Lucid.Base

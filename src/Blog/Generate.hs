@@ -30,7 +30,7 @@ createBlogHome = do
 createProjectsHome :: IO ()
 createProjectsHome = do
     page <- generatePageStr "static/pages/projects.md"
-    writeFile "out/projects/index.html.html" page
+    writeFile "out/projects/index.html" page
 
 generateAll :: IO ()
 generateAll = do

@@ -1,7 +1,7 @@
 .PHONY: build, generate, clean
 
 build: clean
-	cabal install --install-method=copy --installdir="bin/"
+	cabal install --installdir="bin/"
 
 generate:
 	bin/blog generate

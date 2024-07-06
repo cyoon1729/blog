@@ -123,10 +123,6 @@ style =
       color: #1967D2;
     }
 
-    a:hover {
-      @apply underline;
-    }
-
     p {
       font-size: 1.4rem;
     }

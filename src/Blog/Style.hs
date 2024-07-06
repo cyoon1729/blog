@@ -125,7 +125,6 @@ style =
 
     a:hover {
       @apply underline;
-      color: #1976D2;
     }
 
     p {

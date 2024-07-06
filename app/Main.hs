@@ -1,10 +1,12 @@
 module Main where
 
-import MyLib (serve)
+import System.Environment (getArgs)
+import MyLib (serve, generateAll)
 
 main :: IO ()
 main = do
-  serve
-  
- -- p <- generatePageMd "static/pages/home.md"
- -- putStrLn $ show p
+  args <- getArgs
+  case args of 
+    ["dev"] -> serve
+    ["generate"] -> generateAll
+    _ -> error "unknown option"

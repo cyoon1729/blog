@@ -1,5 +1,5 @@
 ## Resume
-[Here](resume/chris_yoon.pdf) is a pdf file of my resume,
+[Here](chris_yoon.pdf) is a pdf file of my resume,
 and below is a more free-form resume, which is a bit more concise:
 
 ##### Skills

@@ -6,8 +6,6 @@
 module Blog.Style (style) where
 
 import Lucid
-import Lucid.Base
-import Lucid.Html5
 import Text.RawString.QQ
 
 style :: Html ()
@@ -122,6 +120,7 @@ style =
     }
 
     a {
+      color: #1967D2;
     }
 
     a:hover {

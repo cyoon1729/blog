@@ -1,10 +1,10 @@
 .PHONY: build, generate, clean
 
 build:
-	cabal build
+	cabal install --installdir="bin/"
 
 generate:
-	cabal run blog generate
+	bin/blog generate
 	cp static/files/chris_yoon.pdf out/resume/chris_yoon.pdf
 
 clean:

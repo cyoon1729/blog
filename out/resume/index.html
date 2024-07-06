@@ -1,0 +1,165 @@
+<head><meta charset="UTF-8"><meta name="viewport" content="width=devic-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css"><style>
+  * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-size: 1.5rem;
+      font-family: 'Roboto Mono', serif;
+    }
+
+    @media screen and (min-width: 800px) {
+      body {
+        background-color: #e2e2e2;
+      }
+
+       .post {
+           background-color: white;
+           padding: 16px;
+           box-shadow: 0 0 6px rgba(0,0,0,.2);
+       }
+    }
+
+    code {
+      font-family: monospace;
+    }
+
+    blockquote {
+      margin-left: 0px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    h4 {
+      font-size: 1.1em;
+    }
+
+    h5 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    main {
+      margin-top: 2rem;
+    }
+
+    .navbar {
+      margin: 0 auto;
+    }
+
+    .tag-container {
+      display: flex;
+      justify-content: start;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      border: 1px solid #333333;
+      border-radius: 24px;
+      margin-right: 8px;
+      background-color: #ffffff;
+      display: inline-block;
+      padding: 4px 12px;
+      margin-bottom: 8px;
+      font-size: 0.9em;
+      color: #000000;
+      cursor: pointer;
+    }
+
+    .navbar-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-li {
+      margin-right: 15px;
+      margin-left: 0px;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    li {
+      margin-left: 15px;
+      float: left;
+    }
+
+    a {
+      color: #1967D2;
+    }
+
+    a:hover {
+      @apply underline;
+      color: #1976D2;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    footer {
+      min-height: 50px;
+    }
+  </style></head><body><div class="navbar"><ul class="navbar-ul"><li class="navbar-li"><a class="sakura-fade no-border" href="/">home</a></li><li class="navbar-li"><a class="sakura-fade no-border" href="/blog">blog</a></li><li class="navbar-li"><a class="sakura-fade no-border" href="/projects">projects</a></li><li class="navbar-li"><a class="sakura-fade no-border" href="/resume">resume</a></li></ul></div><h2>Resume</h2>
+<p><a href="chris_yoon.pdf">Here</a> is a pdf file of my resume,
+and below is a more free-form resume, which is a bit more concise:</p>
+<h5>Skills</h5>
+<ul>
+<li>Areas: Distributed Systems, Operating Systems, Compilers, Backend Dev</li>
+<li>Programming Languages: C, C++, Java, Python, OCaml, Haskell, Rust, RISC Assembly</li>
+<li>Technologies: LLVM, MLIR, Hypervisors, Containerization, PyTorch, Tensorflow, SQL</li>
+</ul>
+<p> </p>
+<h5>Experience</h5>
+<h4>Software Engineer, Palantir Technologies (09/2024 - Present) - NY, NY</h4>
+<p>Starting in 09/2024, returning full-time after an internship</p>
+<h4>Software Engineer Intern, Palantir Technologies (09/2023 - 12/2023)</h4>
+<p>I did backend engineering for Palantir Gotham (U.S. Gov) and Foundry (commercial sector) data <a href="%22https://www.palantir.com/docs/foundry/ontology/overview/%22">Ontology</a> services;
+Broadly put, I built services for the interoperability and the synchronization/distribution of Gotham and Foundry ontologies.</p>
+<p>Related technologies: Java, API Engineering, Distributed Systems</p>
+<h4>Software Engineer Intern, Virtu Financial (06/2023 - 08/2023) - NY, NY</h4>
+<p>I implemented mTLS for async TCP connections with low-level Java interfaces for core high-frequency trading infrastructure running on proprietary JVM.
+I also implemented a proprietary authentication &amp; authorization mechanism into company’s post-trade data services (Kerberos, JWTs etc).</p>
+<p>Related technologies: Java standard libraries (concurrency, NIO, security, networking), Java Spring</p>
+<h4>Software Engineer Intern, Riot Games (05/2022 - 08/2022) - LA, CA</h4>
+<p>I built a GitOps-based config management service for Riot’s service alert ingestion systems,
+and a CI/CD pipeline that triggers the config manager for deploying configs to monitoring systems
+and running config rollbacks at failures.</p>
+<p>Related Technologies: Python, Docker, Jenkins</p>
+<h5>Education</h5>
+<h4>Columbia College, Columbia University (09/2020 - 05/2024) - NY, NY</h4>
+<ul>
+<li>Bachelors in Computer Science, Minor in Mathematics</li>
+<li>Academic Focus: Operating Systems, Compilers, PL Theory</li>
+<li>Teaching:
+<ul>
+<li>Head TA for <a href="%22https://verigu.github.io/4115Spring2024/%22">Compilers</a>,</li>
+<li>TA for <a href="%22https://www.cs.columbia.edu/~sedwards/classes/2022/4995-fall/index.html%22">Parallel Functional Programming</a>,</li>
+<li>Head TA for <a href="%22https://tonydear.com/teaching/coms4701%22">Artificial Intelligence</a>,</li>
+<li>TA for Intro. Computer Systems</li>
+</ul>
+</li>
+</ul>
+</body>

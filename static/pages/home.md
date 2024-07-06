@@ -1,13 +1,15 @@
 ## Chris Yoon
 
-I am a Software Engineer at Palantir Technologies.
+I am a Software Engineer at [Palantir Technologies](https://www.palantir.com/impact/).
 
 Before that, I spent four wonderful years at Columbia, where I completed my undergrad degree with a major
 in computer science and a minor in mathematics (CC '24!). My academic focus was mainly on operating systems, compilers, and programming language theory.
+During college, I've also done engineering internships at [Palantir](https://www.palantir.com/platforms/gotham/), [Virtu Financial](https://www.virtu.com/market-making/)(high frequency trading), and at [Riot Games](https://www.riotgames.com/en).
 
 I enjoy systems programming — things like operating systems, distributed systems, and compilers!
 
-Find my [resume](resume); read about my [projects](projects); or read my [blog](blog)!
+Find my [resume](resume) and my [github](https://github.com/cyoon1729); or read my [blog](blog) or
+about my [projects](projects)!
 
 If you ever want to chat about anything, you can reach me at `cjy2129 [at] gmail [dot] com` :) !
 

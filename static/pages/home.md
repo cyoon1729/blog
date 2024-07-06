@@ -14,7 +14,7 @@ about my [projects](projects)!
 
 If you ever want to chat about anything, you can reach me at `cjy2129 [at] gmail [dot] com` :) !
 
-#### Mentorship
+#### Reaching out to me
 I would not be where I am now without the help I've received from people around me. If I can be
-of help to you in any way (e.g. learning, academics, recruiting), please
+of help to you in any way (e.g. learning, academics, recruiting, mentorship), please
 don't hesitate to shoot me an email!

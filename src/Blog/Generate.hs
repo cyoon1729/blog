@@ -8,9 +8,9 @@ createBase :: IO ()
 createBase = Dir.createDirectory "./out"
 
 createSubDirectories :: IO [()]
-createSubDirectories = mapM Dir.createDirectory subDirs
-  where
-    subDirs = ["./out/blog", "./out/projects", "./out/resume", "./out/files"]
+createSubDirectories = do
+    let subDirs = ["./out/blog", "./out/projects", "./out/resume"]
+    mapM Dir.createDirectory subDirs
 
 createHome :: IO ()
 createHome = do
@@ -35,7 +35,7 @@ createProjectsHome = do
 generateAll :: IO ()
 generateAll = do
     createBase
-    _ <- createSubDirectories
+    createSubDirectories
     createHome
     createResumePage
     createBlogHome

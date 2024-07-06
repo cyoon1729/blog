@@ -1,3 +1,3 @@
 # Blog
 
-my blog
+my blog, at [chrisyoon.xyz](https://chrisyoon.xyz). 

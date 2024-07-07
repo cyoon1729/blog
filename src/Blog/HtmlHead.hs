@@ -20,10 +20,14 @@ fonts = do
     link_ [rel_ "preconnect", href_ "https://fonts.gstatic.com"]
     link_ [rel_ "stylesheet", href_ "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"]
 
+scripts :: Html ()
+scripts = do
+    script_ [type_ "text/javascript", src_ "http://cdn.mathjax.org/mathjax/latest/MathJax.js"] ""
+
 cssStuff :: Html ()
 cssStuff = do
     link_ [rel_ "stylesheet", href_ "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"]
     link_ [rel_ "stylesheet", href_ "https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css", type_ "text/css"]
 
 htmlHead :: Html ()
-htmlHead = head_ $ meta >> fonts >> cssStuff >> style
+htmlHead = head_ $ meta >> fonts >> scripts >> cssStuff >> style

@@ -30,12 +30,12 @@ different arbitrary speeds. Processes may also stop, fail, and restart at any ti
 - **(A2)** The network is **non-Byzantine**, meaning any participant can fail, but none will
 be hostile. Practically, messages can be delayed, lost, or duplicated, but never corrupted.
 
-### Single-Paxos
+### A Long-Winded Rambling about of Single-Paxos
 Single-Decree Paxos (which will now be referred to as just "Paxos") is a protocol to achieve 
 consensus on *a single value* in an asynchronous and non-Byzantine network. Values can be
 proposed within the network, one of which will be accepted and chosen.
 
-#### Proposers and Acceptors
+#### Motivating a Basic Paxos Protocol
 For now, let there be two kinds of processes in the network: proposers and acceptors; proposers send proposals of values 
 to acceptors, and the acceptors accept or reject proposals. Since arbitrarily many proposals can be made, proposals must 
 be identifiably unique. Moreover, for reasons that will become clear very soon, let proposal IDs be ordered
@@ -63,9 +63,21 @@ This guarantees that a consensus (a single chosen value) can be maintained. Cons
 
 Obviously, (R2) still holds via enforcing (R2'). A consensus protocol requiring (R1) and (R2') thus guarantees that 
 only a value that has been proposed may be chosen (G1), and that only a single value can be chosen (G2), as desired.
-(R1) is easy to enforce; our concern is designing a protocol such that (R2') is never violated.
+(R1) is easy to enforce; the goal is to design a protocol such that (R2') is never violated.
 
-We require the 
+In *Paxos Made Simple* [2], a protocol to satisfy the requirements above is motivated as followed: suppose we wanted to prove
+that (R2') holds, via induction. Let there be a proposal `n` with value `v` that is chosen, and assume all proposals `n+1, n+2, ..., m-1`
+issued up to some `m-1` have value `v`. Given this inductive hypothesis, a working protocol should have the proposal `m` issued necessarily have value `v`.
+First, for `v` to have been chosen, there must have been some set `C` that contains a majority of the acceptors, that have all accepted `v`
+from any of the proposals `n, n+1, ..., m-1`. Since `C` is a majority set, any other majority set `S` will have nonempty intersection with
+`C`. By forcing the following invariant, the next proposal `n` issued will necessarily have value `v`:
+
+- **(I1)** For any `v` and `n`, if a proposal with value `v` and ID `n` is issued, then there is a set `S` containing a majority of the acceptors
+such that (a) no acceptor in `S` has accepted a proposal of ID less than `n`, or (b) `v` is the value of the highest-numbered proposal among
+all proposals numbered less than `n` accepted by acceptors in `S`
+
+Thus, (R2') can be satisfied as long as the invariant (I1) is maintained, and so a desired protocol can be designed around this invariant.
+
 
 #### The Synod Protocol
 

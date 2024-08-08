@@ -6,4 +6,4 @@ as a way to reflect or reinforce my own understanding about things.
 
 
 ### Programming Languages and Formal Methods
-- **[08/08/2024] [An Anatomy of a Coq Prof](/blog-posts/coq-proof)
+- **[08/08/2024] [An Anatomy of a Coq Prof](/blog/posts/coq-proof)

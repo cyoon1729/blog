@@ -1,0 +1,260 @@
+<head><meta charset="UTF-8"><meta name="viewport" content="width=devic-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap"><script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css"><style>
+  * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-size: 1.5rem;
+      font-family: 'Roboto Mono', serif;
+    }
+
+    @media screen and (min-width: 800px) {
+      body {
+        background-color: #e2e2e2;
+      }
+
+       .post {
+           background-color: white;
+           padding: 16px;
+           box-shadow: 0 0 6px rgba(0,0,0,.2);
+       }
+    }
+
+    code {
+      font-family: monospace;
+    }
+
+    blockquote {
+      margin-left: 0px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    h4 {
+      font-size: 1.1em;
+    }
+
+    h5 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    main {
+      margin-top: 2rem;
+    }
+
+    .navbar {
+      margin: 0 auto;
+    }
+
+    .tag-container {
+      display: flex;
+      justify-content: start;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      border: 1px solid #333333;
+      border-radius: 24px;
+      margin-right: 8px;
+      background-color: #ffffff;
+      display: inline-block;
+      padding: 4px 12px;
+      margin-bottom: 8px;
+      font-size: 0.9em;
+      color: #000000;
+      cursor: pointer;
+    }
+
+    .navbar-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-li {
+      margin-right: 15px;
+      margin-left: 0px;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    li {
+      margin-left: 15px;
+      float: left;
+    }
+
+    a {
+      color: #1967D2;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    footer {
+      min-height: 50px;
+    }
+  </style></head><body><div class="navbar"><ul class="navbar-ul"><li class="navbar-li"><a class="sakura-fade no-border" href="/">home</a></li><li class="navbar-li"><a class="sakura-fade no-border" href="/blog">blog</a></li><li class="navbar-li"><a class="sakura-fade no-border" href="/projects">projects</a></li><li class="navbar-li"><a class="sakura-fade no-border" href="/resume">resume</a></li></ul></div><h1>An Anatomy of a Coq Program</h1>
+<p><em>Published: 08.08.2024</em></p>
+<p>TLDR: I tried to dissect a simple proof for a trivial theorem (namely, the injectivity
+of the successor function for natural numbers) in an effort to understand the mechanics
+of <code>Coq</code>. Things turned chaotic towards the end, but anyway here's what I learned!</p>
+<p>Getting a bit tired of proving the <em>n</em>th little theorem about natural numbers
+in the <code>IndProp</code> chapter of the <em>Software Foundations</em> (SF) book, I decided to take
+a short break and turn to the more foundational underpinnings of all this.</p>
+<p>The bedrock of all this is the Curry-Howard correspondence, which roughly states that
+there is an isomorphism between the languages of programs and proofs.
+Consequently, (mathematical) theorems can be represented as types (as in programming languages),
+whose proofs are programs/expressions that type-check at that type.</p>
+<p>There's <em>a lot</em> to unpack in the sentence above - I spent a couple days looking back at
+the Coq code I had written for SF with this new perspective, trying to really understand
+how theorems are types and proofs are programs, and what type-checking means in this context.
+I realized that my earlier frustration with Coq mainly came from approaching exercises from SF
+as math problems/puzzles, rather than as &quot;programming&quot;.</p>
+<h3>Theorems are Types, Proofs are Programs</h3>
+<p>Consider the canonical inductive type, <code>nat</code>ural numbers:</p>
+<pre><code class="language-coq">Inductive nat : Set :=
+| O : nat
+| S : nat -&gt; nat.
+</code></pre>
+<p>Let's begin with an extremely simple theorem that states the injectivity of the successor
+function <code>S</code>:</p>
+<pre><code class="language-coq">Theorem S_inj : forall (n m : nat), S n = S m -&gt; n = m.
+</code></pre>
+<p>Read mathematically, the statement is simple: &quot;for every natural numbers n and m,
+if <code>S n = S m</code> then <code>n = m</code>.&quot; But how can we read this as a <em>type</em> of an expression?</p>
+<p>First, <code>forall</code> denotes a dependent product type, so we have <code>[n : nat][m : nat] (S n = S m) -&gt; (n = m)</code>.
+Then, how do we interpret the logical implication <code>(S n = S m) -&gt; (n = m)</code> as a type?
+Note that <code>_ = _</code> is short-hand for the (polymorhpic) inductive type <code>eq</code>:</p>
+<pre><code class="language-coq">Inductive eq (A : Type) (x : A) : A -&gt; Prop :=  eq_refl : eq x x
+</code></pre>
+<p>Both <code>(S n = S m)</code> and <code>n = m</code> are instances of <code>eq nat (S n) (S m)</code>, and
+<code>eq nat n m</code> respectively, which are of type <code>Prop</code>. Recall that the type <code>Prop</code>
+are inhabited by &quot;proof terms&quot;, the same way that <code>O</code>, <code>S O</code>, and so on inhabit the
+type <code>nat</code>. In particular, the <code>Prop</code>osition <code>eq nat n m</code> for some <code>n</code> and <code>m</code> is
+only provable when <code>n</code> and <code>m</code> are identical, via <code>eq_refl</code>. Thus, the type
+<code>(S n = S m) -&gt; (n = m)</code> can be interpreted as a function that takes a proof that
+<code>S n</code> and <code>S m</code> are equal, and returns a proof that <code>n</code> and <code>m</code> are equal.</p>
+<p>Then, what exactly is a &quot;proof term&quot;? If theorems/propositions are types, then their proofs are
+expressions that type-check at that type - this is the Curry-Howard correspondence.
+Let's begin with some trivial propositions on <code>eq</code>:</p>
+<pre><code class="language-coq">Theorem provableEq: eq 1 1.
+Proof.
+  apply eq_refl. (* or just `reflexivity` *)
+Defined.
+</code></pre>
+<p>Printing <code>provableEq</code> gives:</p>
+<pre><code class="language-coq">provableEq = eq_refl : 1 = 1
+</code></pre>
+<p>Note again that <code>eq 1 1</code> is of type <code>Prop</code> (keep in mind currying), and is inhabited by
+<code>eq_refl</code> due to the <code>nat</code> arguments being identical. A <code>Prop</code> like <code>eq 0 1</code> will
+not be provable, as there is cannot be inhabited by instance of <code>eq</code>.</p>
+<p>Now, let's consider <code>S_inj</code> again. <code>S_inj</code> was of type</p>
+<pre><code>[n : nat][m : nat] (S n = S m) -&gt; (n = m)
+</code></pre>
+<p>so giving a term of that type suffices as a proof for <code>S_inj</code> - a term of a dependent
+product type <code>[x : A] F(x)</code> would be a lambda abstraction whose input is <code>x</code> of type <code>A</code>
+and whose body is an expression of type <code>F(x)</code>. For <code>S_inj</code>, the proof term would then
+be an abstraction whose inputs are of type <code>n : nat</code> and <code>m : nat</code>, and whose
+body is of type <code>(S n = S m) -&gt; (n = m)</code> - and when curried, we also have <code>(S n = S m)</code>
+as input type, and just <code>n = m</code> as the type of the body:</p>
+<pre><code>(nat -&gt; nat -&gt; S n = S m) -&gt; n = m
+</code></pre>
+<p>With that, lets look at a proof of <code>S_inj</code> and work backwards:</p>
+<pre><code class="language-coq">Theorem S_inj : forall (n m : nat), S n = S m -&gt; n = m.
+Proof.
+  intros n m H.
+  injection H as Hinj.
+  apply Hinj.
+Defined.
+</code></pre>
+<p>printing <code>S_inj</code> now gives us:</p>
+<pre><code class="language-coq">S_inj = fun (n m : nat) (H : S n = S m) =&gt;
+  let H0 : n = m :=
+    f_equal (fun e : nat =&gt; match e with O =&gt; n | S n0 =&gt; n0 end) H
+  in (fun Hinj : n = m =&gt; Hinj) H0
+    : forall n m : nat, S n = S m -&gt; n = m
+</code></pre>
+<p>which shows us a lambda abstraction, as expected.</p>
+<p>Let's look into the body of the function: note that <code>f_equal</code> is</p>
+<pre><code class="language-coq">f_equal = fun (A B : Type) (f : A -&gt; B) (x y : A) (H : x = y) =&gt;
+  match H in (_ = a) return (f x = f a) with
+    | eq_refl =&gt; eq_refl
+  end.
+    : forall (A B : Type) (f : A -&gt; B) (x y : A), x = y -&gt; f x = f y
+</code></pre>
+<p>Roughly put, <code>f_equal</code> takes as inputs a function <code>f : A -&gt; B</code> and a proof <code>H</code>
+for <code>x y : nat</code> that <code>x = y</code> (that there is a valid instance of <code>eq_refl x y</code>, which
+is true iff <code>x</code> and <code>y</code> are equivalent), and returns a proof that <code>f x = f y</code>. More
+simply put, applying <code>f_equal</code> to <code>x = y</code> where <code>x</code> and <code>y</code> are equivalent makes true
+that <code>f x</code> and <code>f y</code> are equivalent.</p>
+<p>In the context of <code>S_inj</code>, <code>f_equal</code> is applied to</p>
+<ul>
+<li><code>f := (fun e : nat ...)</code>, a function that undoes the successor operator <code>S</code> to its input <code>e</code></li>
+<li><code>S n</code> and <code>S m</code>, as well as a proof <code>H</code> that <code>S n = S m</code>
+where if <code>H</code> is a valid proof term (i.e. an instance of <code>eq_refl</code>), <code>f_equal</code> returns an instance
+of <code>eq_refl</code> for <code>n</code> and <code>m</code> (i.e. a valid proof term for <code>n = m</code>)
+Note that Coq's type system infers <code>f_equal</code>'s arguments that were not provided in <code>S_inj</code>
+(namely <code>A B : Type</code> and <code>x y : A</code>).</li>
+</ul>
+<p>Thus, <code>H0 : n = m</code> in <code>let H0 : n = m := f_equal ... H</code> evaluates to an instance of
+<code>eq_refl</code> provided that <code>S n</code> and <code>S m</code> are equivalent, and the application
+<code>(fun Hinj : n = m =&gt; Hinj) H0</code> returns <code>H0</code> itself if <code>H0</code> is a valid instance of <code>eq_refl</code>.</p>
+<p>Putting all the above together, the &quot;proof&quot; of <code>S_inj</code> is a function that takes <code>n : nat</code>, <code>m : nat</code>,
+a proof <code>H</code> that <code>S n = S m</code> are equal, and gives us a &quot;proof&quot; that <code>n</code> and <code>m</code> are equal.</p>
+<p>Now, going back to the Coq proof for <code>S_inj</code>,</p>
+<pre><code class="language-coq">Theorem S_inj : forall (n m : nat), S n = S m -&gt; n = m.
+Proof.
+  intros n m H.
+  injection H as Hinj.
+  apply Hinj.
+Defined.
+</code></pre>
+<p>To note some points/observations on how each applied tactics relate to the generated proof term:</p>
+<ul>
+<li><code>intro</code>/<code>intros</code> generates a function <code>fun</code>, so <code>intros n m H</code> creates a function</li>
+</ul>
+<pre><code class="language-coq">fun (n m : nat) (H : S n = S m) =&gt; ...
+</code></pre>
+<ul>
+<li><code>injection H</code> generates all hypothesis Coq and infer from <code>H</code>, which in this case, the injectivity result <code>n = m</code>.
+Presumably, Coq was able to this by knowing to apply <code>f_equal</code> to constructor-based equalities (<em>I'm actually not sure</em>).
+Expanding on that, I would assume, in the constructed proof term for <code>S_inj</code>,</li>
+</ul>
+<pre><code class="language-coq">let H0 : n = m :=
+  f_equal (fun e : nat =&gt; match e with O =&gt; n | S n0 =&gt; n0 end) H
+in (fun Hinj : n = m =&gt; Hinj) H0
+</code></pre>
+<p><code>injection H as Hinj</code> creates the hypothesis <code>Hinj : n = m</code> (generated by Coq) in the context,
+whose proof is <code>H0</code>, which uses <code>f_equal</code> on the function <code>fun e: nat =&gt; ...</code> (<em>suspiciously</em> doing
+something with the constructor <code>S</code> - i.e. taking the <code>pred</code>) and <code>H : S n = S m</code>. <code>Hinj</code> is a hypothesis, so
+<code>(fun Hinj: n = m =&gt; Hinj)</code> applied on <code>H0</code> returns itself, a proof that <code>H0</code>.</p>
+<h3>For next time:</h3>
+<p>I'm curious about how each line in the proof (or each application of tactic) incrementally constructs the
+proof term. e.g. <code>intros</code> creates an abstraction, <code>apply</code> generates an application, <code>destruct, split, inversion</code>
+generates <code>match</code> statements - without printing out the proof term, I hope to get an idea of how each tactic
+maps to Gallina constructs</p>
+</body>

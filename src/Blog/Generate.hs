@@ -1,6 +1,7 @@
 module Blog.Generate (generateAll) where
 
 import qualified System.Directory as Dir
+import qualified Data.List as L
 
 import Blog.Page (generatePageStr)
 
@@ -9,7 +10,7 @@ createBase = Dir.createDirectory "./out"
 
 createSubDirectories :: IO [()]
 createSubDirectories = do
-    let subDirs = ["./out/blog", "./out/projects", "./out/resume"]
+    let subDirs = ["./out/blog", "./out/blog/posts", "./out/projects", "./out/resume"]
     mapM Dir.createDirectory subDirs
 
 createHome :: IO ()
@@ -27,6 +28,18 @@ createBlogHome = do
     page <- generatePageStr "static/pages/blog.md"
     writeFile "out/blog/index.html" page
 
+createBlogPost :: String -> IO ()
+createBlogPost file = do
+    let outFile = (takeWhile ((/=) '.') file) <> ".html"
+    post <- generatePageStr ("static/pages/blog-posts/" <> file)
+    writeFile ("out/blog/posts/" ++ outFile) post
+
+createBlogPosts :: IO [()]
+createBlogPosts = do
+    files <- Dir.getDirectoryContents "static/pages/blog-posts/"
+    let posts = filter (L.isSuffixOf ".md") files
+    mapM createBlogPost posts
+
 createProjectsHome :: IO ()
 createProjectsHome = do
     page <- generatePageStr "static/pages/projects.md"
@@ -39,4 +52,5 @@ generateAll = do
     createHome
     createResumePage
     createBlogHome
+    createBlogPosts
     createProjectsHome

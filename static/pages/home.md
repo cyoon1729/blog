@@ -1,9 +1,10 @@
 ## Chris Yoon
 
-I am a Software Engineer at [Palantir Technologies](https://www.palantir.com/impact/).
+I am a software engineer at [Palantir Technologies](https://www.palantir.com/impact/).
 
-Before that, I completed my undergraduate degree at Columbia, with a major in Computer Science
-and minor in Mathematics.
+Before that, I completed my undergraduate degree at Columbia University (Columbia College),
+with a major in Computer Science and minor in Mathematics. I've also worked at Palantir,
+Virtu Financial (high frequency trading), and Riot Games, all as a software engineer intern.
 
 My technical interests are programming language theory, formal methods & verification, and systems programming!
 

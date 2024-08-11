@@ -1,8 +1,7 @@
 ## Blog
 
 Welcome to my blog! I mostly write about computer science, and sometimes about my life.
-Although my blog posts may seem to adopt a pedagogical tone, they are written for myself,
-as a way to reflect or reinforce my own understanding about things.
+Although my blog posts may seem to adopt a pedagogical tone, they are written for myself.
 
 
 ### Programming Languages and Formal Methods

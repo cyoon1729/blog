@@ -2,11 +2,10 @@
 
 I am a software engineer at [Palantir Technologies](https://www.palantir.com/impact/).
 
-Before that, I completed my undergraduate degree at Columbia University (Columbia College),
-with a major in Computer Science and minor in Mathematics. I've also worked at Palantir,
-Virtu Financial (high frequency trading), and Riot Games, all as a software engineer intern.
+Before that, I spent four wonderful years at Columbia University (Columbia College '24),
+where I completed my undergraduate degree in Computer Science and Mathematics.
 
-My technical interests are programming language theory, formal methods & verification, and systems programming!
+My technical interests are systems programming, programming language theory, and formal methods & verification!
 
 If you ever want to chat about anything, you can reach me at `cjy2129 [at] gmail [dot] com` :) !
 

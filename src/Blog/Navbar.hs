@@ -14,11 +14,8 @@ home = a_ [class_ "sakura-fade no-border", href_ "/"] "home"
 blog :: Html ()
 blog = a_ [class_ "sakura-fade no-border", href_ "/blog"] "blog"
 
-projects :: Html ()
-projects = a_ [class_ "sakura-fade no-border", href_ "/projects"] "projects"
-
 resume :: Html ()
 resume = a_ [class_ "sakura-fade no-border", href_ "/resume"] "resume"
 
 navbar :: Html ()
-navbar = div_ [class_ "navbar"] $ (ul_ [class_ "navbar-ul"]) (mapM_ (li_ [class_ "navbar-li"]) [home, blog, projects, resume])
+navbar = div_ [class_ "navbar"] $ (ul_ [class_ "navbar-ul"]) (mapM_ (li_ [class_ "navbar-li"]) [home, blog, resume])

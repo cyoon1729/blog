@@ -46,8 +46,4 @@ Related Technologies: Python, Docker, Jenkins
 **09.2020 - 05.2024 | New York, NY**
 - Bachelors in Computer Science, Minor in Mathematics (GPA: 3.90)
 - Academic Focus: Operating Systems, Compilers, PL Theory
-- Teaching: 
-  * Head TA for [Compilers](https://verigu.github.io/4115Spring2024/)
-  * TA for [Parallel Functional Programming](https://www.cs.columbia.edu/~sedwards/classes/2022/4995-fall/index.html)
-  * Head TA for [Artificial Intelligence](https://tonydear.com/teaching/coms4701)
-  * TA for Intro. Computer Systems
+- Teaching: Head TA for [Compilers](https://verigu.github.io/4115Spring2024/), TA for [Parallel Functional Programming](https://www.cs.columbia.edu/~sedwards/classes/2022/4995-fall/index.html), Head TA for [Artificial Intelligence](https://tonydear.com/teaching/coms4701), TA for Intro. Computer Systems

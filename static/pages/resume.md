@@ -1,47 +1,27 @@
 ## Resume
-[Here](chris_yoon.pdf) is a pdf file of my resume, and below is a more free-form resume:
+[Here](chris_yoon.pdf) is a pdf file of my resume, and below is a brief rundown:
 
 ### Skills
-- Areas: Distributed Systems, Operating Systems, Compilers, Backend Dev
-- Programming Languages: C, C++, Java, Python, OCaml, Haskell, Rust, Coq
+- Areas: Distributed Systems, Operating Systems, Compilers, Backend Engineering
+- Programming Languages: C, Java, Python, OCaml, Haskell, Rust, Coq
 - Technologies: LLVM, Hypervisors, Containerization, PyTorch, Tensorflow, SQL
 
 (among others)
 
-
 ### Experience
 ##### Software Engineer, Palantir Technologies
-*09.2024 - Present | New York, NY*
-
-Starting in 09.2024, returning full-time after an internship
+*Sep 2024 - Present*. Building out the Foundry Ontology and related infrastructure.
 
 ##### Software Engineer Intern, Palantir Technologies
-*09.2023 - 12.2023 | New York, NY*
-
-I did backend engineering for Palantir Gotham (U.S. Gov) and Foundry (commercial sector) data [Ontology](https://www.palantir.com/docs/foundry/ontology/overview/) services;
-Broadly put, I built services for the interoperability and the synchronization/distribution of Gotham and Foundry ontologies.
-
-Related technologies: Java, API Engineering, Distributed Systems
+*Sep 2023 - Dec 2023*. Worked on Gotham & Foundry Ontology.
 
 ##### Software Engineer Intern, Virtu Financial
-*06.2023 - 08.2023 | New York, NY*
+*Jun 2023 - Aug 2023*. Low-level networking for high frequency trading infrastructure.
 
-I implemented mTLS for async TCP connections with low-level Java interfaces for their core high-frequency trading infrastructure.
-I also implemented a proprietary authentication & authorization mechanism into the company’s post-trade data services (Kerberos, JWTs etc).
+##### Software Engineer Intern, Riot Games 
+*May 2022 - Aug 2022*. Monitoring and alert ingenstion infrastructure.
 
-Related technologies: Java standard libraries (concurrency, NIO, security, networking), Java Spring
-
-##### Software Engineer Intern, Riot Games
-*05.2022 - 08.2022 | Los Angeles, CA*
-
-I built a GitOps-based config management service for Riot’s service alert ingestion systems,
-and a CI/CD pipeline that triggers the config manager for deploying configs to monitoring systems
-and running config rollbacks at failures.
-
-Related Technologies: Python, Docker, Jenkins
-
-
-### Education 
+### School
 ##### Columbia College, Columbia University
 **09.2020 - 05.2024 | New York, NY**
 - Bachelors in Computer Science, Minor in Mathematics (GPA: 3.90)

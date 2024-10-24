@@ -1,12 +1,12 @@
 ## Resume
 [Here](chris_yoon.pdf) is a pdf file of my resume, and below is a brief rundown:
 
+
 ### Skills
 - Areas: Distributed Systems, Operating Systems, Compilers, Backend Engineering
 - Programming Languages: C, Java, Python, OCaml, Haskell, Rust, Coq
 - Technologies: LLVM, Hypervisors, Containerization, PyTorch, Tensorflow, SQL
 
-(among others)
 
 ### Experience
 ##### Software Engineer, Palantir Technologies
@@ -20,6 +20,7 @@
 
 ##### Software Engineer Intern, Riot Games 
 *May 2022 - Aug 2022*. Monitoring and alert ingenstion infrastructure.
+
 
 ### School
 ##### Columbia College, Columbia University

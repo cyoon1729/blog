@@ -1,4 +1,4 @@
-# My Ongoing Technical Reading List
+## My Ongoing Reading List
 
 Some things I want to read, understand, and implement (@ indicates currently reading, & indicates completed)
 
@@ -34,3 +34,4 @@ Some things I want to read, understand, and implement (@ indicates currently rea
 #### Tooling/Tools/Misc
 - [Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
 - [Z3](https://theory.stanford.edu/~nikolaj/programmingz3.html)
+- [Satisfiability Modulo Theories](https://people.eecs.berkeley.edu/~sseshia/pubdir/SMT-BookChapter.pdf) 

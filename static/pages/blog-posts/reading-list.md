@@ -9,6 +9,9 @@ Some things I want to read, understand, and implement (@ indicates currently rea
 - @ Types and Programming Language, but actually implement & prove the important ones
 - @ [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/)
 - [Tutorial Implementation of Dependently Typed Lambda Calculus](https://www.andres-loeh.de/LambdaPi/)
+- [From Delimeted Continuation to Algebraic Effects in Haskell](https://blog.poisson.chat/posts/2023-01-02-del-cont-examples.html)
+- [Monadic Framework for Delimited Continuations](https://legacy.cs.indiana.edu/~dyb/pubs/monadicDC.pdf)
+- [Introduction to Algebraic Effects and Handlers](https://www.eff-lang.org/handlers-tutorial.pdf)
 - [Homotopy Type Theory](https://homotopytypetheory.org/book/) (Big Stretch)
 
 

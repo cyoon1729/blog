@@ -18,7 +18,7 @@ Some things I want to read, understand, and implement (@ indicates currently rea
 #### Networks and Operating Systems
 - @ QUIC: RFC [8999](https://www.rfc-editor.org/rfc/rfc8999.html), [9000](https://www.rfc-editor.org/rfc/rfc9000.html), [9001](https://www.rfc-editor.org/rfc/rfc9001.html), [9002](https://www.rfc-editor.org/rfc/rfc9002.html) and implement them :)
 - HTTP/3: RFC [9114](https://www.rfc-editor.org/rfc/rfc9114.html)
-- [eBPF](https://eunomia.dev/tutorials/)
+- [eBPF](https://lwn.net/Articles/740157/), [more eBPF](https://eunomia.dev/tutorials/), [more eBPF](https://github.com/mikeroyal/eBPF-Guide), [DINT](https://www.usenix.org/conference/nsdi24/presentation/zhou-yang), [XRP](https://www.usenix.org/conference/osdi22/presentation/zhong)
 - [io-uring](https://unixism.net/loti/index.html)
 - [hugepages](https://lwn.net/Articles/374424/)
 - [Linux Network Profiling/Performance](https://ntk148v.github.io/posts/linux-network-performance-ultimate-guide/)

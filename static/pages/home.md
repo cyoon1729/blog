@@ -5,6 +5,9 @@ I am a software engineer at [Palantir Technologies](https://www.palantir.com/imp
 
 Before that, I spent four wonderful years at Columbia University, where I completed my bachelors degree in Computer Science and Mathematics (Columbia College '24!).
 
-My technical interests are programming language theory, systems programming, and formal methods.
+My technical interests are systems programming, programming language theory, and formal methods & verification!
 
-If you want to chat, you can reach me at `cjy2129 [at] gmail [dot] com`!
+If you want to chat about anything, you can reach me at `cjy2129 [at] gmail [dot] com`!
+
+![lambda cube](lambda-cube.svg)
+

@@ -47,4 +47,12 @@ style =
     p {
       font-size: 1.0rem;
     }
+
+    img {
+      display:block;
+      float:none;
+      margin-left:auto;
+      margin-right:auto;
+      width:50%;
+    }
   |]
